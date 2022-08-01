@@ -115,7 +115,64 @@
     <script src="js/jquery.sticky.js"></script>
     <script src="js/main.js"></script>
 
+
     <style>
+@media screen and (max-width: 320px) {
+  
+  #logo{
+            position: absolute;
+            top: 380%;
+            bottom: 30%;  
+            right: 10%;
+            left: 18%;         
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+        }
+}
+
+@media screen and (min-width: 321px) and (max-width: 550px){
+ /* styles */
+ #logo{
+            position: absolute;
+            top: 332%;
+            bottom: 30%;  
+            right: 120%;
+            left: 5%;         
+            max-width: 420px;
+            width: 100%;
+            height: auto;
+        }
+
+}
+
+@media screen and (min-width: 768px){
+  #logo{
+            position: absolute;
+            top: 320%;
+            bottom: 30%;  
+            right: 110%;
+            left: 28%;         
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+        }
+      }
+
+      @media screen and (min-width: 551px) and (max-width: 767px){
+ /* styles */
+ #logo{
+            position: absolute;
+            top: 320%;
+            bottom: 30%;  
+            right: 120%;
+            left: 15%;         
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+        }}
+
+
         .heading{
           position: absolute;
           top: 90%;
@@ -133,16 +190,9 @@
             font-size: 18px;
         }
 
-        .logo{
-            position: absolute;
-            top: 350%;
-            bottom: 30%;
-            left: 30%;
-            right: 200%;
-        }
     </style>
     <div class="heading"><h1>WELCOME TO Satak Studios WEBSITE!</h1></body></div>
     <div class="intro">Here you can download our games and learn about us</div>
-    <div class="logo"><img src="img/Logo.jpg" height="200px" width="500px"></div>
+    <div class="logo"><img id="logo" src="img/Logo.jpg"></div>
 </body>
 </html>
